@@ -36,4 +36,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
-         skopeo copy docker://docker.io/redis:7.2.5@sha256:176b0d887dadc436aff6f35299237bb3910587cdf9b499317b0036d57b8cd722 docker://registry.cn-hangzhou.aliyuncs.com/wind2024/redis-arm64:7.2.5
+         skopeo copy docker://docker.io/redis:7.2.5 docker://registry.cn-hangzhou.aliyuncs.com/wind2024/redis-arm64:7.2.5
