@@ -36,4 +36,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
          # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
-         skopeo  --override-arch amd64 copy docker://docker.io/minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1
+         skopeo  --override-arch amd64 copy docker://docker.io/mysql:8.0.43 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/mysql:8.0.43
