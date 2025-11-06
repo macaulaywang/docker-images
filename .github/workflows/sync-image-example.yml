@@ -37,4 +37,4 @@ jobs:
       run: |
          # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称  
          #skopeo   copy docker://docker.io/bitnami/redmine:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/redmine:latest
-         skopeo copy --override-arch arm64 docker://docker.io/redmine:6.1.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/redmine:6.1.0
+         skopeo copy --override-arch arm64 docker://docker.io/nocobase/nocobase:latest-full docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/nocobase:latest-full
