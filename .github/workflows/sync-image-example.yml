@@ -41,29 +41,85 @@ jobs:
          #skopeo copy --override-arch arm64 docker://docker.io/linshellfeng/datax_web:3.0.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/datax_web:3.0.1
          #skopeo copy  docker://docker.n8n.io/n8nio/n8n:nightly-arm64 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/n8n:nightly-arm64
          ################################## nginx ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/bitnami/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/nginx:latest
-         skopeo copy --override-arch amd64 docker://docker.io/bitnami/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/nginx:latest
+         #skopeo copy --override-arch arm64 docker://docker.io/bitnami/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/nginx:latest
+         #skopeo copy --override-arch amd64 docker://docker.io/bitnami/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/nginx:latest
          ################################## busybox ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/busybox:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/busybox:latest
-         skopeo copy --override-arch amd64 docker://docker.io/busybox:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/busybox:latest
+         #skopeo copy --override-arch arm64 docker://docker.io/busybox:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/busybox:latest
+         #skopeo copy --override-arch amd64 docker://docker.io/busybox:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/busybox:latest
          ################################## weaviate ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/semitechnologies/weaviate:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/weaviate:1.27.0
-         skopeo copy --override-arch amd64 docker://docker.io/semitechnologies/weaviate:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/weaviate:1.27.0
+         #skopeo copy --override-arch arm64 docker://docker.io/semitechnologies/weaviate:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/weaviate:1.27.0
+         #skopeo copy --override-arch amd64 docker://docker.io/semitechnologies/weaviate:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/weaviate:1.27.0
          ################################## postgres:15-alpine ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/postgres:15-alpine
-         skopeo copy --override-arch amd64 docker://docker.io/postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/postgres:15-alpine
+         #skopeo copy --override-arch arm64 docker://docker.io/postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/postgres:15-alpine
+         #skopeo copy --override-arch amd64 docker://docker.io/postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/postgres:15-alpine
          ################################## langgenius/dify-api:1.11.4 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-api:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-api:1.11.4
-         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-api:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-api:1.11.4
+         #skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-api:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-api:1.11.4
+         #skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-api:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-api:1.11.4
          ################################## langgenius/dify-web:1.11.4 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-web:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-web:1.11.4
-         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-web:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-web:1.11.4
+         #skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-web:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-web:1.11.4
+         #skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-web:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-web:1.11.4
          ################################## langgenius/dify-sandbox:0.2.12 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-sandbox:0.2.12 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-sandbox:0.2.12
-         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-sandbox:0.2.12 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-sandbox:0.2.12
+         #skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-sandbox:0.2.12 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-sandbox:0.2.12
+         #skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-sandbox:0.2.12 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-sandbox:0.2.12
          ################################## langgenius/dify-plugin-daemon:0.5.2-local ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-plugin-daemon:0.5.2-local docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-plugin-daemon:0.5.2-local
-         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-plugin-daemon:0.5.2-local docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-plugin-daemon:0.5.2-local
+         #skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-plugin-daemon:0.5.2-local docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-plugin-daemon:0.5.2-local
+         #skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-plugin-daemon:0.5.2-local docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-plugin-daemon:0.5.2-local
          ################################## ubuntu/squid:latest ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/squid:latest
-         skopeo copy --override-arch amd64 docker://docker.io/ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/squid:latest
+         #skopeo copy --override-arch arm64 docker://docker.io/ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/squid:latest
+         #skopeo copy --override-arch amd64 docker://docker.io/ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/squid:latest
+
+         ################################## certbot/certbot:latest ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/certbot/certbot:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/certbot:latest
+         skopeo copy --override-arch amd64 docker://docker.io/certbot/certbot:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/certbot:latest
+         ################################## oceanbase/oceanbase-ce:4.3.5-lts ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/oceanbase/oceanbase-ce:4.3.5-lts docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/oceanbase-ce:4.3.5-lts
+         skopeo copy --override-arch amd64 docker://docker.io/oceanbase/oceanbase-ce:4.3.5-lts docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/oceanbase-ce:4.3.5-lts
+         ################################## oceanbase/seekdb:latest ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/oceanbase/seekdb:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/seekdb:latest
+         skopeo copy --override-arch amd64 docker://docker.io/oceanbase/seekdb:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/seekdb:latest
+         ################################## langgenius/qdrant:v1.8.3 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/langgenius/qdrant:v1.8.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/qdrant:v1.8.3
+         skopeo copy --override-arch amd64 docker://docker.io/langgenius/qdrant:v1.8.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/qdrant:v1.8.3
+         ################################## pgvector/pgvector:pg16 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvector:pg16
+         skopeo copy --override-arch amd64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvector:pg16
+
+         ################################## vastdata/vastbase-vector:latest ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/vastdata/vastbase-vector:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/vastbase-vector:latest
+         skopeo copy --override-arch amd64 docker://docker.io/vastdata/vastbase-vector:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/vastbase-vector:latest
+         ################################## pgvector/pgvector:pg16 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvector:pg16
+         skopeo copy --override-arch amd64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvector:pg16
+         ################################## tensorchord/pgvecto-rs:pg16-v0.3.0 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvecto-rs:pg16-v0.3.0
+         skopeo copy --override-arch amd64 docker://docker.io/tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvecto-rs:pg16-v0.3.0
+         ################################## ghcr.io/chroma-core/chroma:0.5.20 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/chroma:0.5.20
+         skopeo copy --override-arch amd64 docker://docker.io/ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/chroma:0.5.20
+         ################################## intersystems/iris-community:2025.3 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/intersystems/iris-community:2025.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/iris-community:2025.3
+         skopeo copy --override-arch amd64 docker://docker.io/intersystems/iris-community:2025.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/iris-community:2025.3
+         ################################## milvusdb/milvus:v2.6.3 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/milvusdb/milvus:v2.6.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/milvus:v2.6.3
+         skopeo copy --override-arch amd64 docker://docker.io/milvusdb/milvus:v2.6.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/milvus:v2.6.3
+         ################################## opensearchproject/opensearch:latest ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opensearch:latest
+         skopeo copy --override-arch amd64 docker://docker.io/opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opensearch:latest
+         ################################## opensearchproject/opensearch-dashboards:latest ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opensearch-dashboards:latest
+         skopeo copy --override-arch amd64 docker://docker.io/opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opensearch-dashboards:latest
+         ################################## opengauss/opengauss:7.0.0-RC1 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/opengauss/opengauss:7.0.0-RC1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opengauss:7.0.0-RC1
+         skopeo copy --override-arch amd64 docker://docker.io/opengauss/opengauss:7.0.0-RC1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opengauss:7.0.0-RC1
+         ################################## myscale/myscaledb:1.6.4 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/myscaledb:1.6.4
+         skopeo copy --override-arch amd64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/myscaledb:1.6.4
+         ################################## matrixorigin/matrixone:2.1.1 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/matrixone:2.1.1
+         skopeo copy --override-arch amd64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/matrixone:2.1.1
+         ################################## elasticsearch:8.14.3 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/elasticsearch:8.14.3
+         skopeo copy --override-arch amd64 docker://docker.io/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/elasticsearch:8.14.3
+         ################################## kibana:8.14.3 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/kibana:8.14.3
+         skopeo copy --override-arch amd64 docker://docker.io/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/kibana:8.14.3
