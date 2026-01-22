@@ -97,23 +97,23 @@ jobs:
          #skopeo copy --override-arch arm64 docker://docker.io/ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/chroma:0.5.20
          #skopeo copy --override-arch amd64 docker://docker.io/ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/chroma:0.5.20
          ################################## intersystems/iris-community:2025.3 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/intersystems/iris-community:2025.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/iris-community:2025.3
-         skopeo copy --override-arch amd64 docker://docker.io/intersystems/iris-community:2025.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/iris-community:2025.3
+         #skopeo copy --override-arch arm64 docker://docker.io/intersystems/iris-community:2025.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/iris-community:2025.3
+         #skopeo copy --override-arch amd64 docker://docker.io/intersystems/iris-community:2025.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/iris-community:2025.3
          ################################## milvusdb/milvus:v2.6.3 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/milvusdb/milvus:v2.6.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/milvus:v2.6.3
-         skopeo copy --override-arch amd64 docker://docker.io/milvusdb/milvus:v2.6.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/milvus:v2.6.3
+         #skopeo copy --override-arch arm64 docker://docker.io/milvusdb/milvus:v2.6.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/milvus:v2.6.3
+         #skopeo copy --override-arch amd64 docker://docker.io/milvusdb/milvus:v2.6.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/milvus:v2.6.3
          ################################## opensearchproject/opensearch:latest ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opensearch:latest
-         skopeo copy --override-arch amd64 docker://docker.io/opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opensearch:latest
+         #skopeo copy --override-arch arm64 docker://docker.io/opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opensearch:latest
+         #skopeo copy --override-arch amd64 docker://docker.io/opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opensearch:latest
          ################################## opensearchproject/opensearch-dashboards:latest ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opensearch-dashboards:latest
-         skopeo copy --override-arch amd64 docker://docker.io/opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opensearch-dashboards:latest
+         #skopeo copy --override-arch arm64 docker://docker.io/opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opensearch-dashboards:latest
+         #skopeo copy --override-arch amd64 docker://docker.io/opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opensearch-dashboards:latest
          ################################## opengauss/opengauss:7.0.0-RC1 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/opengauss/opengauss:7.0.0-RC1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opengauss:7.0.0-RC1
-         skopeo copy --override-arch amd64 docker://docker.io/opengauss/opengauss:7.0.0-RC1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opengauss:7.0.0-RC1
+         #skopeo copy --override-arch arm64 docker://docker.io/opengauss/opengauss:7.0.0-RC1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/opengauss:7.0.0-RC1
+         #skopeo copy --override-arch amd64 docker://docker.io/opengauss/opengauss:7.0.0-RC1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/opengauss:7.0.0-RC1
          ################################## myscale/myscaledb:1.6.4 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/myscaledb:1.6.4
-         skopeo copy --override-arch amd64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/myscaledb:1.6.4
+         #skopeo copy --override-arch arm64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/myscaledb:1.6.4
+         #skopeo copy --override-arch amd64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/myscaledb:1.6.4
          ################################## matrixorigin/matrixone:2.1.1 ##################################
          skopeo copy --override-arch arm64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/matrixone:2.1.1
          skopeo copy --override-arch amd64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/matrixone:2.1.1
