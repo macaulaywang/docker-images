@@ -39,4 +39,31 @@ jobs:
          #skopeo   copy docker://docker.io/bitnami/redmine:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/redmine:latest
          #skopeo copy --override-arch amd64 docker://docker.io/linshellfeng/datax_web:3.0.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/datax_web:3.0.1
          #skopeo copy --override-arch arm64 docker://docker.io/linshellfeng/datax_web:3.0.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/datax_web:3.0.1
-          skopeo copy  docker://docker.n8n.io/n8nio/n8n:nightly-arm64 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/n8n:nightly-arm64
+         #skopeo copy  docker://docker.n8n.io/n8nio/n8n:nightly-arm64 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/n8n:nightly-arm64
+         ################################## nginx ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/bitnami/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/nginx:latest
+         skopeo copy --override-arch amd64 docker://docker.io/bitnami/nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/nginx:latest
+         ################################## busybox ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/busybox:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/busybox:latest
+         skopeo copy --override-arch amd64 docker://docker.io/busybox:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/busybox:latest
+         ################################## weaviate ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/semitechnologies/weaviate:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/weaviate:1.27.0
+         skopeo copy --override-arch amd64 docker://docker.io/semitechnologies/weaviate:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/weaviate:1.27.0
+         ################################## postgres:15-alpine ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/postgres:15-alpine
+         skopeo copy --override-arch amd64 docker://docker.io/postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/postgres:15-alpine
+         ################################## langgenius/dify-api:1.11.4 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-api:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-api:1.11.4
+         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-api:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-api:1.11.4
+         ################################## langgenius/dify-web:1.11.4 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-web:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-web:1.11.4
+         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-web:1.11.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-web:1.11.4
+         ################################## langgenius/dify-sandbox:0.2.12 ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-sandbox:0.2.12 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-sandbox:0.2.12
+         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-sandbox:0.2.12 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-sandbox:0.2.12
+         ################################## langgenius/dify-plugin-daemon:0.5.2-local ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/langgenius/dify-plugin-daemon:0.5.2-local docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-plugin-daemon:0.5.2-local
+         skopeo copy --override-arch amd64 docker://docker.io/langgenius/dify-plugin-daemon:0.5.2-local docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/dify-plugin-daemon:0.5.2-local
+         ################################## ubuntu/squid:latest ##################################
+         skopeo copy --override-arch arm64 docker://docker.io/ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/squid:latest
+         skopeo copy --override-arch amd64 docker://docker.io/ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/squid:latest
