@@ -88,11 +88,11 @@ jobs:
          #skopeo copy --override-arch arm64 docker://docker.io/vastdata/vastbase-vector:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/vastbase-vector:latest
          #skopeo copy --override-arch amd64 docker://docker.io/vastdata/vastbase-vector:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/vastbase-vector:latest
          ################################## pgvector/pgvector:pg16 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvector:pg16
-         skopeo copy --override-arch amd64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvector:pg16
+         #skopeo copy --override-arch arm64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvector:pg16
+         #skopeo copy --override-arch amd64 docker://docker.io/pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvector:pg16
          ################################## tensorchord/pgvecto-rs:pg16-v0.3.0 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvecto-rs:pg16-v0.3.0
-         skopeo copy --override-arch amd64 docker://docker.io/tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvecto-rs:pg16-v0.3.0
+         #skopeo copy --override-arch arm64 docker://docker.io/tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/pgvecto-rs:pg16-v0.3.0
+         #skopeo copy --override-arch amd64 docker://docker.io/tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/pgvecto-rs:pg16-v0.3.0
          ################################## ghcr.io/chroma-core/chroma:0.5.20 ##################################
          #skopeo copy --override-arch arm64 docker://docker.io/ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/chroma:0.5.20
          #skopeo copy --override-arch amd64 docker://docker.io/ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/chroma:0.5.20
@@ -115,11 +115,13 @@ jobs:
          #skopeo copy --override-arch arm64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/myscaledb:1.6.4
          #skopeo copy --override-arch amd64 docker://docker.io/myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/myscaledb:1.6.4
          ################################## matrixorigin/matrixone:2.1.1 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/matrixone:2.1.1
-         skopeo copy --override-arch amd64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/matrixone:2.1.1
+         #skopeo copy --override-arch arm64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/matrixone:2.1.1
+         #skopeo copy --override-arch amd64 docker://docker.io/matrixorigin/matrixone:2.1.1 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/matrixone:2.1.1
          ################################## elasticsearch:8.14.3 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/elasticsearch:8.14.3
-         skopeo copy --override-arch amd64 docker://docker.io/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/elasticsearch:8.14.3
+         #skopeo copy --override-arch arm64 docker://docker.io/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/elasticsearch:8.14.3
+         #skopeo copy --override-arch amd64 docker://docker.io/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/elasticsearch:8.14.3
          ################################## kibana:8.14.3 ##################################
-         skopeo copy --override-arch arm64 docker://docker.io/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/kibana:8.14.3
-         skopeo copy --override-arch amd64 docker://docker.io/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/kibana:8.14.3
+         #skopeo copy --override-arch arm64 docker://docker.io/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/kibana:8.14.3
+         #skopeo copy --override-arch amd64 docker://docker.io/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/kibana:8.14.3
+         skopeo copy --override-arch arm64 docker://docker.io/rizkyr/dify-worker:v1.0.0 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/dify-worker:v1.0.0
+         
