@@ -128,6 +128,6 @@ jobs:
          #skopeo copy --override-arch arm64 docker://docker.io/n8nio/n8n:latest-arm64 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/n8n:latest-arm64
          #skopeo copy --override-arch amd64 docker://docker.io/n8nio/n8n:latest-amd64 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/n8n:latest-amd64
          
-         skopeo copy --override-arch arm64 docker://docker.io/cozedev/coze-studio-server:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/coze-studio-server:latest
+         skopeo copy --override-arch arm64 docker://docker.io/ruvnet/wifi-densepose:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/wifi-densepose:latest
         
          
