@@ -4,10 +4,10 @@ name: Sync Image to Aliyun  Example
  
 # 怎样触发工作流
 on:
-  push:
-    branches: [ "main" ]
+  push:   推动:
+    branches: [ "main" ]   branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main" ]   branches: [ "main" ]
  
 # 2.添加一个job来执行同步操作。在workflow文件中，添加一个job 并指定使用的操作系统环境。
 # 工作流程任务（通常含有一个或多个步骤）
@@ -128,7 +128,7 @@ jobs:
          #skopeo copy --override-arch arm64 docker://docker.io/n8nio/n8n:latest-arm64 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/n8n:latest-arm64
          #skopeo copy --override-arch amd64 docker://docker.io/n8nio/n8n:latest-amd64 docker://registry.cn-hangzhou.aliyuncs.com/wind_x64/n8n:latest-amd64
          
-         skopeo copy --override-arch arm64 docker://docker.io/syq163/emoti-voice:latest docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/emoti-voice:latest
+         skopeo copy --override-arch arm64 docker://docker.io/n8nio/n8n:2.25.7-arm64 docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/n8n:2.25.7-arm64
          #skopeo copy --override-arch arm64 docker://docker.io/python:3.9-slim docker://registry.cn-hangzhou.aliyuncs.com/wind_arm64/python:3.9-slim
          
         
