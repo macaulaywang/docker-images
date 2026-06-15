@@ -4,7 +4,7 @@ name: Sync Image to Aliyun  Example
  
 # 怎样触发工作流
 on:
-  push:   推动:
+  push:   #推动:
     branches: [ "main" ]   branches: [ "main" ]
   pull_request:
     branches: [ "main" ]   branches: [ "main" ]
